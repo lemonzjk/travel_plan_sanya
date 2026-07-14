@@ -21,12 +21,14 @@
     @media(min-width:1050px){.shell{width:calc(100% - 48px)}.section-head{padding-left:32px;padding-right:32px}.section-body{padding-left:32px;padding-right:32px}.timeline{grid-template-columns:repeat(auto-fit,minmax(480px,1fr));gap:20px;padding:20px}.spot{grid-template-columns:minmax(210px,36%) minmax(0,1fr)}.spot-body{padding:15px}.dining{padding:18px 20px}.food-card{grid-template-columns:minmax(270px,32%) minmax(0,1fr);padding:12px;gap:16px}.itinerary-tools{padding:12px 14px}.day-strip{gap:8px}.day-chip{flex:1 1 70px}.hotel-option .photo-gallery{height:220px}}
     @media(max-width:520px){.itinerary-tools{margin-left:0;margin-right:0}.section-head>p{max-width:44%;line-height:1.35;overflow-wrap:anywhere}.day-header{display:grid;grid-template-columns:minmax(0,1fr) auto}.day-header>div:first-child{min-width:0}.day-head-actions{flex-direction:column;align-items:flex-end;gap:4px}.day h3{overflow-wrap:anywhere}.day-date{font-size:.72rem}}
     .itinerary-tools{background:#fff;backdrop-filter:none}.day-execution{padding:12px 14px 13px;border-bottom:1px solid var(--line);background:#f8fbfa}.execution-title{display:flex;align-items:center;gap:7px;margin-bottom:8px;color:#31575d;font-size:.78rem;font-weight:900}.execution-title:before{content:"";width:18px;height:3px;border-radius:99px;background:var(--coral)}.execution-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px;row-gap:8px}.execution-item{min-width:0;padding-left:9px;border-left:2px solid #dce9e5}.execution-item--wide{grid-column:1/-1}.execution-item b{display:block;color:#527176;font-size:.67rem}.execution-item span{display:block;margin-top:2px;color:#526d73;font-size:.74rem;line-height:1.5;overflow-wrap:anywhere}#days{perspective:none}#days .day.day-exit-left,#days .day.day-exit-right,#days .day.day-enter-right,#days .day.day-enter-left{will-change:transform,opacity;backface-visibility:hidden}#days .day.day-exit-left{animation-duration:.13s}#days .day.day-exit-right{animation-duration:.13s}#days .day.day-enter-right{animation-duration:.27s}#days .day.day-enter-left{animation-duration:.27s}@keyframes dayOutLeft{to{opacity:0;transform:translate3d(-14%,0,0)}}@keyframes dayOutRight{to{opacity:0;transform:translate3d(14%,0,0)}}@keyframes dayInRight{from{opacity:0;transform:translate3d(22%,0,0)}to{opacity:1;transform:translate3d(0,0,0)}}@keyframes dayInLeft{from{opacity:0;transform:translate3d(-22%,0,0)}to{opacity:1;transform:translate3d(0,0,0)}}@keyframes swipeCue{0%,100%{transform:translate3d(0,0,0)}28%{transform:translate3d(-7px,0,0)}58%{transform:translate3d(6px,0,0)}}@media(min-width:700px){.day-execution{padding:14px 18px 15px}.execution-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.execution-item--wide{grid-column:span 2}}@media(max-width:380px){.execution-grid{grid-template-columns:1fr}.execution-item--wide{grid-column:auto}}
+    .packing-summary{display:grid;gap:10px;padding:13px 14px;border-radius:14px;background:linear-gradient(120deg,#e9f6f2,#fff8e9)}.packing-summary__top{display:flex;align-items:center;justify-content:space-between;gap:10px}.packing-count{color:#31575d;font-size:.82rem;font-weight:900}.packing-actions{display:flex;align-items:center;gap:8px}.packing-filter{display:inline-flex;align-items:center;gap:5px;color:#557176;font-size:.72rem;font-weight:800;cursor:pointer}.packing-filter input{accent-color:var(--sea)}.packing-reset{width:34px;height:34px;border:1px solid #c8ddd8;border-radius:9px;background:#fff;color:var(--sea);font-size:1rem;cursor:pointer}.packing-progress{height:7px;overflow:hidden;border-radius:999px;background:rgba(7,91,98,.12)}.packing-progress span{display:block;width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--sea2),var(--coral));transition:width .25s ease}.packing-weather{margin:0;padding-left:10px;border-left:3px solid var(--sun);color:#6d6049;font-size:.75rem;line-height:1.55}.packing-groups{display:grid;gap:10px;margin-top:12px}.packing-group{border:1px solid var(--line);border-radius:13px;overflow:hidden;background:#fff}.packing-group[hidden]{display:none}.packing-group h3{margin:0;padding:10px 12px;background:#f4f9f7;color:#31575d;font-size:.86rem}.packing-group small{display:block;margin-top:2px;color:#7a9093;font-size:.68rem;font-weight:500}.packing-items{display:grid}.packing-item{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:7px;align-items:start;padding:9px 11px;border-top:1px solid #edf2f0;cursor:pointer}.packing-item[hidden]{display:none}.packing-item input{margin:3px 0 0;accent-color:var(--sea)}.packing-item__copy{min-width:0}.packing-item__copy b{display:block;color:#365b61;font-size:.79rem;line-height:1.35}.packing-item__copy span{display:block;margin-top:2px;color:#708589;font-size:.7rem;line-height:1.45}.packing-item.is-packed .packing-item__copy{opacity:.55}.packing-item.is-packed .packing-item__copy b{text-decoration:line-through}.packing-critical{align-self:start;padding:2px 5px;border-radius:5px;background:#fff0d4;color:#a85c16;font-size:.63rem;font-weight:900;white-space:nowrap}@media(min-width:760px){.packing-groups{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}.packing-summary{padding:15px 17px}}@media(max-width:380px){.packing-summary__top{align-items:flex-start;flex-direction:column}.packing-actions{width:100%;justify-content:space-between}}
   </style>
 </head>
 <body>
   <header class="hero"><div class="shell"><div class="hero-card"><div class="eyebrow">Sanya / July 2026</div><h1>一家人的<br><em>弹性三亚</em></h1><p>全程住东北人候鸟公寓 · 近处主线与远途备选都保留 · 每天都有包餐之外的餐厅选择。</p><div class="quick"><span class="chip chip--hero">7.15 · 09:30 抵达</span><span class="chip chip--hero">景点标注距公寓距离</span><span class="chip chip--hero">轻松版 / 丰富版可切换</span></div></div></div></header>
   <main class="shell">
     <section class="section"><div class="section-head"><h2>出发前清单</h2><p>由出发日倒推 · 可勾选</p></div><div class="section-body"><div id="todo" class="todo-wrap"></div></div></section>
+    <section class="section" id="packing"><div class="section-head"><h2>行李清单</h2><p>按人分装 · 共用品合并</p></div><div class="section-body"><div class="packing-summary"><div class="packing-summary__top"><div id="packing-count" class="packing-count">0 / 0 已装好</div><div class="packing-actions"><label class="packing-filter"><input id="packing-filter" type="checkbox">只看未带</label><button id="packing-reset" class="packing-reset" type="button" aria-label="重置行李清单" title="重置行李清单">↺</button></div></div><div class="packing-progress" aria-hidden="true"><span id="packing-progress"></span></div><p id="packing-weather" class="packing-weather"></p></div><div id="packing-list" class="packing-groups"></div></div></section>
     <section class="section"><div class="section-head"><h2>行前须知</h2><p>盛夏与台风季定制</p></div><div class="section-body"><div id="pretrip" class="grid grid--three"></div></div></section>
     <section class="section"><div class="section-head"><h2>抵离与住宿</h2><p>连续入住 · 公寓包餐</p></div><div class="section-body"><div id="flights"></div><div id="hotels" class="hotel-stack" style="margin-top:12px"></div><p id="disclaimer-text" class="disclaimer">本页全部信息（天气、航班、住宿、景点、门票、营业时间等）均为参考建议，可能不准确或已过时；出发前请在公寓、景区和地图 App 中再次核实。</p></div></section>
     <section class="section"><div class="section-head"><h2>路线地图</h2><p>文字行程离线可读 · 地图需联网</p></div><div class="section-body"><p class="map-note">点位已按腾讯地图 GCJ-02 坐标转换为 WGS-84，以适配本页 OSM 地图；线路只表示每日到访顺序，不代表实际驾车路线。</p><div id="map"></div></div></section>
@@ -49,12 +51,87 @@
   "startDate":"2026-07-15",
   "colorScheme":"海盐青绿 · 珊瑚橘",
   "preTrip":{
-    "weather":{"summary":"7 月 15—18 日预报多雷阵雨；19—20 日可能有较明显降雨和大风；21—22 日相对适合户外。十日预报会变化，海岛、登山项目须在出发前 24—48 小时复核。","typhoon":"7 月处于海南汛期与台风影响期。遇雷电、大风、暴雨或官方暂停通知，立即取消涉海、涉山、玻璃栈道和远程包车项目，改为商场或留在住宿地。"},
+    "weather":{"summary":"7 月 14 日短期模型显示：15—17 日雷雨概率较高，15—19 日气温约 24.7—30.3°C、最大风速约 19.6—26.6 km/h。预报仍会变化，海岛、登山项目须在出发前 24 小时复核。","typhoon":"7 月处于海南汛期与台风影响期。遇雷电、大风、暴雨或官方暂停通知，立即取消涉海、涉山、玻璃栈道和远程包车项目，改为商场或留在住宿地。"},
     "packing":"轻薄速干衣、防晒衣/帽子、SPF50+ 防晒、晴雨两用伞、防滑凉鞋、薄长袖（空调房）、防水袋、常用肠胃药和驱蚊用品。长时间户外请每 2 小时补涂防晒并补水。",
     "payment":"微信/支付宝覆盖面广；另备少量现金。海鲜、包车、潜水等项目先问总价、加工费和退改规则，付款留存订单与收据。",
     "apps":["天气雷达或中国天气（每天早晚看预警）","滴滴/高德/腾讯地图（以实时路况为准）","景区官方公众号或小程序（实名预约、闭园公告）","12345（旅游消费纠纷和咨询）"],
     "ticketTip":"蜈支洲岛、千古情演出、海岛水上项目不建议过早购买不可退票；优先选可退改产品。天涯海角、鹿回头等免费项目也请当天核对预约与开园状态。"
   },
+  "packingChecklist":{"weatherNote":"7 月 14 日 Open-Meteo 短期预报显示，15—17 日雷雨概率较高，气温闷热且阵风较明显。晴雨两用伞、轻便雨衣、防水袋、替换衣物和防滑鞋列为高优先级；出门前仍以官方预警为准。","groups":[
+    {"name":"证件与订单","note":"每个人分别核对，原件随身不托运","items":[
+      {"id":"id_cards","text":"每个人的身份证原件","note":"放随身小包固定夹层，出门前逐人点名核对。","critical":true},
+      {"id":"child_docs","text":"儿童证件或户口簿（如同行）","note":"按航司、铁路和景区实名要求准备。","critical":true},
+      {"id":"outbound_order","text":"去程航班、车票或接送订单截图","note":"保存离线截图，包含时间、航站楼和上车点。","critical":true},
+      {"id":"return_order","text":"返程订单或可改签方案","note":"尚未确定返程时，至少保存购票入口和家庭联系人。","critical":true},
+      {"id":"hotel_info","text":"公寓地址、电话、门牌和联系人截图","note":"同时发到家庭群，避免只有一个人保存。","critical":true},
+      {"id":"insurance_contacts","text":"保险保单与紧急联系人","note":"保单号、报案电话、家属电话均保存离线。"},
+      {"id":"cash_card","text":"银行卡与少量现金","note":"现金分开放置，移动支付仍作为主要方式。"}
+    ]},
+    {"name":"手机与电子","note":"全家带一套备用充电能力即可","items":[
+      {"id":"phones","text":"手机逐台充满电","note":"地图、打车、购票和联系公寓都依赖手机。","critical":true},
+      {"id":"charging_cables","text":"充电线与多口充电头","note":"按手机接口核对，避免只带充电头没带线。"},
+      {"id":"power_bank","text":"符合安检要求的充电宝","note":"随身携带、不托运；标识和容量以航司及安检规定为准。","critical":true},
+      {"id":"offline_maps","text":"离线地图与关键页面截图","note":"公寓、机场、医院、景区入口和返程订单。"},
+      {"id":"phone_waterproof","text":"手机防水袋","note":"海边和雷雨天使用，入水前先做密封测试。"},
+      {"id":"earphones","text":"耳机与转接头","note":"多人休息或长途乘车时使用。"}
+    ]},
+    {"name":"防晒与防雨","note":"未来几天雷雨概率较高，放在最容易拿的位置","items":[
+      {"id":"umbrella","text":"结实的晴雨两用伞","note":"每 1—2 人一把，雷电大风时不要在空旷海边撑伞。","critical":true},
+      {"id":"raincoats","text":"轻便雨衣或一次性雨披","note":"大风或景区步行时比雨伞更方便。","critical":true},
+      {"id":"sunscreen","text":"SPF50+ 防晒霜","note":"选择日常习惯使用的产品，户外及时补涂。","critical":true},
+      {"id":"sun_hat","text":"遮阳帽与太阳镜","note":"帽子优先选择有固定绳、不易被风吹走的款式。"},
+      {"id":"sun_jacket","text":"轻薄防晒衣","note":"兼顾户外防晒和空调房保暖。"},
+      {"id":"waterproof_bags","text":"防水袋与密封袋","note":"证件、药品、充电线和湿衣物分开装。"},
+      {"id":"water_bottles","text":"轻便水杯或水瓶","note":"多人各自标记，避免高温天忘记补水。"}
+    ]},
+    {"name":"衣物与鞋子","note":"公寓可洗衣时按 4—5 天周转，不必带满 10 套","items":[
+      {"id":"quick_dry_tops","text":"速干上衣 4—5 件/人","note":"优先轻薄、宽松、洗后容易干。"},
+      {"id":"bottoms","text":"短裤、裙装或薄长裤 3—4 件/人","note":"至少保留一条薄长裤防蚊和进空调房。"},
+      {"id":"underwear","text":"内衣裤与袜子 5 套左右/人","note":"另准备一个干湿分离收纳袋。","critical":true},
+      {"id":"sleepwear","text":"睡衣 1—2 套/人","note":"选择透气款，确认公寓空调温度。"},
+      {"id":"light_layer","text":"薄长袖或轻外套","note":"飞机、商场和夜间空调环境使用。"},
+      {"id":"swimwear","text":"泳衣 1—2 套（计划下水时）","note":"只在开放且有救生员的区域使用。"},
+      {"id":"walking_shoes","text":"舒适防滑运动鞋","note":"雨后路面、鹿回头和公园优先穿。","critical":true},
+      {"id":"sandals","text":"防滑凉鞋或拖鞋","note":"海边使用，避免只带光滑鞋底拖鞋。"},
+      {"id":"laundry_kit","text":"脏衣袋与少量洗衣用品","note":"先问公寓是否提供洗衣机和晾晒位置。"}
+    ]},
+    {"name":"洗护与女性用品","note":"按个人习惯准备，不依赖公寓提供一次性用品","items":[
+      {"id":"dental_kit","text":"牙刷、牙膏、牙线与漱口用品","note":"每人一套并做好区分。"},
+      {"id":"towel","text":"个人毛巾或速干毛巾","note":"入住后先确认公寓布草情况。"},
+      {"id":"shampoo_care","text":"洗发、护发与沐浴用品","note":"使用旅行分装瓶并做好防漏。"},
+      {"id":"skincare","text":"护肤、卸妆与常用化妆品","note":"液体统一装进防漏袋。"},
+      {"id":"period_products","text":"卫生巾、护垫等生理用品","note":"按行程天数多准备 1—2 天余量。","critical":true},
+      {"id":"hair_items","text":"梳子、发圈、发夹","note":"海风较大，长发出门方便固定。"},
+      {"id":"glasses","text":"眼镜、隐形眼镜与护理液","note":"隐形眼镜使用者带备用框架眼镜。"},
+      {"id":"tissues","text":"纸巾、湿巾与小包垃圾袋","note":"全家共用，不需要每个人重复带很多。"}
+    ]},
+    {"name":"药品与健康","note":"处方药按医嘱，其他药品只带本人平时安全使用的","items":[
+      {"id":"prescription_meds","text":"长期处方药与用药清单","note":"保留原包装，按天分装时同时带药名和剂量记录。","critical":true},
+      {"id":"motion_meds","text":"晕车或晕船用品","note":"计划乘船的人按本人既往使用情况准备。"},
+      {"id":"stomach_meds","text":"常用肠胃药","note":"只带本人熟悉且没有禁忌的药物。"},
+      {"id":"rehydration","text":"口服补液盐","note":"高温出汗或肠胃不适时按说明或医嘱使用。"},
+      {"id":"allergy_meds","text":"个人常用抗过敏药","note":"有明确过敏史者同时告知同行家人。"},
+      {"id":"mosquito_care","text":"驱蚊液与止痒用品","note":"傍晚、绿地和雨后使用。"},
+      {"id":"first_aid","text":"创可贴、消毒棉片和纱布","note":"处理小擦伤；严重情况及时就医。"},
+      {"id":"thermometer","text":"体温计与口罩","note":"多人同行共带一套即可。"}
+    ]},
+    {"name":"家庭共用品","note":"全家只带一份，交给固定的人保管","items":[
+      {"id":"family_contact_card","text":"纸质家庭联系卡","note":"写上姓名、电话、公寓地址和紧急联系人。","critical":true},
+      {"id":"shared_snacks","text":"少量密封零食","note":"落地、堵车或长途景区日应急，不要大量囤积。"},
+      {"id":"foldable_bags","text":"折叠购物袋 1—2 个","note":"采购、水果和临时分装使用。"},
+      {"id":"small_flashlight","text":"小手电或手机照明备用","note":"用于停电或夜间查看门锁、通道。"},
+      {"id":"zip_bags","text":"不同尺寸密封袋","note":"票据、药品、湿衣和电子配件分类。"},
+      {"id":"luggage_tags","text":"行李牌或醒目标记","note":"写联系电话，不写完整身份证号码和详细住址。"}
+    ]},
+    {"name":"每日随身小包","note":"抵达后按当天路线重新装，不要背全部行李出门","items":[
+      {"id":"day_id","text":"身份证或必要证件","note":"景区实名、乘船或返程日才携带原件。","critical":true},
+      {"id":"day_phone_power","text":"手机、充电线与充电宝","note":"出门前确认电量和导航地址。","critical":true},
+      {"id":"day_weather","text":"雨具、防晒和饮用水","note":"每天根据天气雷达增减。","critical":true},
+      {"id":"day_meds","text":"当天需要的处方药与常用药","note":"不要把全程药量都带去海边。","critical":true},
+      {"id":"day_clothes","text":"海边日的干衣与速干毛巾","note":"装入独立防水袋。"},
+      {"id":"day_booking","text":"预约码、票务和公寓留饭确认","note":"出发前统一截屏，避免现场信号不好。"}
+    ]}
+  ]},
   "flights":{
     "booked":[{"label":"去程 · 航班号待补","code":"已预订 / 待补充","time":"2026-07-15 09:30 抵达三亚凤凰国际机场"}],
     "candidates":[{"label":"返程安排","code":"待确认","time":"7 月 24 日或更晚","note":"尚未提供返程城市、日期和航班号；为避免生成不准确班次，本页只保留返程待办。"}]
@@ -327,6 +404,9 @@
     ];
     var period={morning:'早上',noon:'中午',afternoon:'下午',evening:'晚上'};
     document.getElementById('todo').innerHTML=renderChecklistHTML(computeReminders(trip.startDate,trip.reminders));
+    var packing=trip.packingChecklist||{groups:[],weatherNote:''};
+    document.getElementById('packing-weather').textContent=packing.weatherNote;
+    document.getElementById('packing-list').innerHTML=packing.groups.map(function(group){return'<section class="packing-group"><h3>'+escapeHTML(group.name)+'<small>'+escapeHTML(group.note||'')+'</small></h3><div class="packing-items">'+group.items.map(function(item){return'<label class="packing-item"><input type="checkbox" data-packing-id="'+escapeHTML(item.id)+'"><span class="packing-item__copy"><b>'+escapeHTML(item.text)+'</b><span>'+escapeHTML(item.note||'')+'</span></span>'+(item.critical?'<span class="packing-critical">必带</span>':'')+'</label>'}).join('')+'</div></section>'}).join('');
     var p=trip.preTrip;
     document.getElementById('pretrip').innerHTML=[
       ['天气与台风','<p><b>趋势：</b>'+escapeHTML(p.weather.summary)+'</p><p style="margin-top:8px"><b>台风：</b>'+escapeHTML(p.weather.typhoon)+'</p>'],
@@ -464,6 +544,7 @@
     document.getElementById('days').innerHTML=trip.days.map(function(d,i){var view=displayDay(d),originalCopy=originalDays.filter(function(day){return day.date===d.date})[0]||d,collapsed=i>9;return '<article id="day-'+(i+1)+'" class="day '+(i>9?'extension ':'')+(collapsed?'is-collapsed':'')+'" data-day="'+(i+1)+'" data-date="'+d.date+'" data-original-theme="'+escapeHTML(originalCopy.theme)+'" data-original-tip="'+escapeHTML(originalCopy.tips.join(' · '))+'" data-near-theme="'+escapeHTML(view.nearTheme)+'" data-near-tip="'+escapeHTML(view.nearTip)+'" data-ultra-theme="'+escapeHTML(view.ultraTheme)+'" data-ultra-tip="'+escapeHTML(view.ultraTip)+'"><header class="day-header"><div><div class="day-index">Day '+(i+1)+(i>9?' · 可选延长':'')+'</div><h3>'+escapeHTML(view.theme)+'</h3></div><div class="day-head-actions"><time class="day-date">'+d.date.slice(5).replace('-','/')+' · '+escapeHTML(d.weekday)+'</time><button class="day-toggle" type="button" aria-label="'+(collapsed?'展开':'收起')+'第 '+(i+1)+' 天" aria-expanded="'+(!collapsed)+'">'+(collapsed?'+':'−')+'</button></div></header><div class="day-tips">'+view.tips.map(escapeHTML).join('　·　')+'</div>'+dayOverview(d.date,view.ultraGuide)+executionPanel()+'<div class="timeline">'+view.slots.map(slot).join('')+'</div>'+(d.alternatives&&d.alternatives.length?'<div class="alternatives">'+d.alternatives.map(function(a){return '<div class="alternative"><b>'+escapeHTML(a.label)+'</b>'+escapeHTML(a.summary)+'</div>'}).join('')+'</div>':'')+meals(d.dining,d.date)+'</article>'}).join('');
     initDeferredImages();
     function initChecklistState(){var key='sanya-trip-checklist-v1',inputs=Array.prototype.slice.call(document.querySelectorAll('#todo input[type="checkbox"]')),saved=[];try{saved=JSON.parse(localStorage.getItem(key)||'[]')}catch(e){}inputs.forEach(function(input,i){input.checked=!!saved[i];input.addEventListener('change',function(){try{localStorage.setItem(key,JSON.stringify(inputs.map(function(x){return x.checked})))}catch(e){}})})}
+    function initPackingState(){var key='sanya-packing-checklist-v1',inputs=Array.prototype.slice.call(document.querySelectorAll('[data-packing-id]')),groups=Array.prototype.slice.call(document.querySelectorAll('.packing-group')),filter=document.getElementById('packing-filter'),reset=document.getElementById('packing-reset'),count=document.getElementById('packing-count'),progress=document.getElementById('packing-progress'),saved={};try{saved=JSON.parse(localStorage.getItem(key)||'{}')}catch(e){}inputs.forEach(function(input){input.checked=!!saved[input.dataset.packingId]});function update(){var done=0;inputs.forEach(function(input){var item=input.closest('.packing-item');if(input.checked)done++;item.classList.toggle('is-packed',input.checked);item.hidden=filter.checked&&input.checked});groups.forEach(function(group){group.hidden=filter.checked&&Array.prototype.every.call(group.querySelectorAll('.packing-item'),function(item){return item.hidden})});count.textContent=done+' / '+inputs.length+' 已装好';progress.style.width=(inputs.length?done/inputs.length*100:0)+'%'}function save(){var state={};inputs.forEach(function(input){if(input.checked)state[input.dataset.packingId]=true});try{localStorage.setItem(key,JSON.stringify(state))}catch(e){}}inputs.forEach(function(input){input.addEventListener('change',function(){save();update()})});filter.addEventListener('change',update);reset.addEventListener('click',function(){if(!window.confirm('确定清空全部行李勾选进度吗？'))return;inputs.forEach(function(input){input.checked=false});try{localStorage.removeItem(key)}catch(e){}update()});update()}
     function initItineraryControls(){
       var tools=document.getElementById('itinerary-tools'),days=Array.prototype.slice.call(document.querySelectorAll('.day')),daysWrap=document.getElementById('days'),modeButtons=Array.prototype.slice.call(document.querySelectorAll('.mode-button')),strip=document.getElementById('day-strip'),collapseAll=document.getElementById('collapse-all'),pagerPrev=document.getElementById('pager-prev'),pagerNext=document.getElementById('pager-next'),pagerStatus=document.getElementById('pager-status'),pagerDots=document.getElementById('pager-dots'),back=document.getElementById('back-itinerary'),empty=document.getElementById('filter-empty'),favoriteButtons=Array.prototype.slice.call(document.querySelectorAll('.favorite-button')),favoriteKey='sanya-trip-favorites-v1',favorites={},mode='ultra',eligibleDays=[],currentDay=null,transitioning=false,reduceMotion=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       strip.innerHTML=trip.days.map(function(d,i){return'<button class="day-chip" type="button" data-target="day-'+(i+1)+'">D'+(i+1)+' · '+d.date.slice(5).replace('-','/')+'</button>'}).join('');
@@ -502,6 +583,7 @@
       updateFavoriteButtons();try{localStorage.removeItem('sanya-trip-mode')}catch(e){}applyMode('ultra');runSwipeCue();updateBack()
     }
     initChecklistState();
+    initPackingState();
     initItineraryControls();
     document.getElementById('tips').innerHTML=trip.tips.map(function(t,i){return '<article class="info-card"><h3>0'+(i+1)+'</h3><p>'+escapeHTML(t)+'</p></article>'}).join('');
     document.getElementById('sources').innerHTML='<b>资料来源与时效说明</b><ul>'+trip.sources.map(function(s){return'<li>'+escapeHTML(s.name)+'：'+escapeHTML(s.note)+'</li>'}).join('')+'<li><a href="http://www.sanyalngy.com/rooms/" target="_blank" rel="noopener">东北人候鸟公寓旧官网</a>：公寓与房型照片发布于 2014—2019 年，仅供历史参考，不代表 2026 年实时房况。</li><li><a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>：景点实景与公开真实菜品照片；菜品图只作同类参考，不冒充门店实拍。</li></ul><p>餐饮图片不跨天复用；没有可靠实拍的餐厅明确显示图片暂缺，不使用生成图或无关搜索图填充。景点距离为距公寓直线距离，实际道路里程以导航为准。</p>';
